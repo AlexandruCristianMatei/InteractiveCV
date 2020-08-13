@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/dragndrop.css">
+    <script src="assets/js/dragndrop.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">about me</a></li>
+                <li><a href="cv.html" target="_blank">my online cv</a></li>
+                <li><a href="technical.html" target="_blank">technical</a></li>
+                <li><a href="hobbies.html" target="_blank">hobbies</a></li>
+                <li><a href="contact.html" target="_blank">contact</a></li>
+            </ul>
+        </nav>
+        <div class="toggle">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+    </header>
+    <main>
+        <h1>Drag and Drop Area</h1>
+        <section class="icons">
+            <div class="description-section-a">
+                <h3>How well do you know your logo?</h3>
+            </div>
+            <div class="icon-matching-field">
+                <div class="icon-container">
+                    <i ondragstart="dragStartA(event)" ondragend="dragEndA(event)" draggable="true" class="fab fa-html5"></i>
+                    <i ondragstart="dragStartA(event)" ondragend="dragEndA(event)" draggable="true" class="fab fa-css3"></i>
+                    <i ondragstart="dragStartA(event)" ondragend="dragEndA(event)" draggable="true" class="fab fa-js"></i>
+                    <i ondragstart="dragStartA(event)" ondragend="dragEndA(event)" draggable="true" class="fab fa-react"></i>
+                </div>
+                <div class="icon-match-result">
+                    <div class="icon-match-item">
+                        <div class="drop-item-section-a"></div>
+                        <div class="definition-item">Is a programming language that conforms to the ECMAScript specification.</div>
+                    </div>
+                    <div class="icon-match-item">
+                        <div class="drop-item-section-a"></div>
+                        <div class="definition-item">A JavaScript library for building user interfaces.</div>
+                    </div>
+                    <div class="icon-match-item">
+                        <div class="drop-item-section-a"></div>
+                        <div class="definition-item">A mechanism built for adding style to Web documents.</div>
+                    </div>
+                    <div class="icon-match-item">
+                        <div class="drop-item-section-a"></div>
+                        <div class="definition-item">The standard markup language for documents designed to be displayed in a web browser.</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="code-lines">
+            <div class="description-section-b">
+                <h3>Simplicity is the ultimate sophistication! Choose whisely!</h3>
+            </div>
+            <div class="lines-field">
+                <div class="line-row">
+                    <div class="segments drag-line-segment">
+                        <code class="code a-a" draggable="true" ondragstart="dragStartSegmentA(event)" ondragend="dragEndSegmentA(event)">
+                            1. place-items: <span>center</span>;
+                        </code>
+                        <code class="code a-b" draggable="true" ondragstart="dragStartSegmentA(event)" ondragend="dragEndSegmentA(event)">
+                            2. display: <span>flex</span>;
+                            align-items: <span>center</span>;
+                            justify-content: <span>center</span>;
+                        </code>
+                        <code class="code a-c" draggable="true" ondragstart="dragStartSegmentA(event)" ondragend="dragEndSegmentA(event)">
+                            3. top: <span>50%</span>;
+                            left: <span>50%</span>;
+                            transform: <span>translate(-50%, -50%)</span>;
+                        </code>
+                    </div>
+                    <div class="segments drop-line-segment line-a">
+                    </div>
+                    <div class="segments description-segment">
+                        <p>What method do you choose to center an item in a container?</p>
+                    </div>
+                </div>
+                <div class="line-row">
+                    <div class="segments drag-line-segment">
+                        <code class="code b-a" draggable="true" ondragstart="dragStartSegmentB(event)" ondragend="dragEndSegmentB(event)">
+                            1. Color Names
+                        </code>
+                        <code class="code b-b" draggable="true" ondragstart="dragStartSegmentB(event)" ondragend="dragEndSegmentB(event)">
+                            2. RGB / RGBA
+                        </code>
+                        <code class="code b-c" draggable="true" ondragstart="dragStartSegmentB(event)" ondragend="dragEndSegmentB(event)">
+                            3. Hex code
+                        </code>
+                    </div>
+                    <div class="segments drop-line-segment line-b"></div>
+                    <div class="segments description-segment">
+                        <p>What is Your favourite color picker</p>
+                    </div>
+                </div>
+                <div class="line-row">
+                    <div class="segments drag-line-segment">
+                        <code class="code c-a" draggable="true" ondragstart="dragStartSegmentC(event)" ondragend="dragEndSegmentC(event)">
+                            1. opacity: <span>0</span>;
+                        </code>
+                        <code class="code c-b" draggable="true" ondragstart="dragStartSegmentC(event)" ondragend="dragEndSegmentC(event)">
+                            2. display: <span>none</span>;
+                        </code>
+                        <code class="code c-c" draggable="true" ondragstart="dragStartSegmentC(event)" ondragend="dragEndSegmentC(event)">
+                            3. visibility: <span>hidden</span>;
+                        </code>
+                    </div>
+                    <div class="segments drop-line-segment line-c"></div>
+                    <div class="segments description-segment">
+                        <p>Which of the following deletes an element from DOM?</p>
+                    </div>
+                </div>
+                <div class="line-row">
+                    <div class="segments drag-line-segment">
+                        <code class="code d-a" draggable="true" ondragstart="dragStartSegmentD(event)" ondragend="dragEndSegmentD(event)">
+                            1. Pixels
+                        </code>
+                        <code class="code d-b" draggable="true" ondragstart="dragStartSegmentD(event)" ondragend="dragEndSegmentD(event)">
+                            2. Rem
+                        </code>
+                        <code class="code d-c" draggable="true" ondragstart="dragStartSegmentD(event)" ondragend="dragEndSegmentD(event)">
+                            3. Em
+                        </code>
+                        <code class="code d-d" draggable="true" ondragstart="dragStartSegmentD(event)" ondragend="dragEndSegmentD(event)">
+                            4. Ch
+                        </code>
+                    </div>
+                    <div class="segments drop-line-segment line-d"></div>
+                    <div class="segments description-segment">
+                        <p>Which of the following makes an element's size depend on it's parent size?</p>
+                    </div>
+                </div>
+                <div class="line-row">
+                    <div class="segments drag-line-segment">
+                        <code class="code e-a" draggable="true" ondragstart="dragStartSegmentE(event)" ondragend="dragEndSegmentE(event)">
+                            1. RefferenceError
+                        </code>
+                        <code class="code e-b" draggable="true" ondragstart="dragStartSegmentE(event)" ondragend="dragEndSegmentE(event)">
+                            2. infinity
+                        </code>
+                        <code class="code e-c" draggable="true" ondragstart="dragStartSegmentE(event)" ondragend="dragEndSegmentE(event)">
+                            3. -infinity
+                        </code>
+                        <code class="code e-d" draggable="true" ondragstart="dragStartSegmentE(event)" ondragend="dragEndSegmentE(event)">
+                            4. 0 (zero)
+                        </code>
+                    </div>
+                    <div class="segments drop-line-segment line-e"></div>
+                    <div class="segments description-segment">
+                        <p>What would be the result of <code>console.log(Math.max());</code>?</p>
+                    </div>
+                </div>
+                <div class="line-row">
+                    <div class="segments drag-line-segment">
+                        <code class="code f-a" draggable="true" ondragstart="dragStartSegmentF(event)" ondragend="dragEndSegmentF(event)">
+                            1. CUrly brackets - <span>{}</span>
+                        </code>
+                        <code class="code f-b" draggable="true" ondragstart="dragStartSegmentF(event)" ondragend="dragEndSegmentF(event)">
+                            2. Dollar sign & curly brackets - <span>${}</span>
+                        </code>
+                        <code class="code f-c" draggable="true" ondragstart="dragStartSegmentF(event)" ondragend="dragEndSegmentF(event)">
+                            3. DOllar sign - <span>$</span>
+                        </code>
+                        <code class="code f-d" draggable="true" ondragstart="dragStartSegmentF(event)" ondragend="dragEndSegmentF(event)">
+                            4. Hash symbol - <span>#</span>
+                        </code>
+                    </div>
+                    <div class="segments drop-line-segment line-f"></div>
+                    <div class="segments description-segment">
+                        <p>What notation is being used when we want to give JavaScript behavior in template literals?</p>
+                    </div>
+                </div>
+                <div class="line-row">
+                    <div class="segments drag-line-segment">
+                        <code class="code g-a" draggable="true" ondragstart="dragStartSegmentG(event)" ondragend="dragEndSegmentG(event)">
+                            1. getElementById
+                        </code>
+                        <code class="code g-b" draggable="true" ondragstart="dragStartSegmentG(event)" ondragend="dragEndSegmentG(event)">
+                            2. getElementByClassName
+                        </code>
+                        <code class="code g-c" draggable="true" ondragstart="dragStartSegmentG(event)" ondragend="dragEndSegmentG(event)">
+                            3. querySelectorAll
+                        </code>
+                        <code class="code g-d" draggable="true" ondragstart="dragStartSegmentG(event)" ondragend="dragEndSegmentG(event)">
+                        4. querySelector
+                        </code>
+                    </div>
+                    <div class="segments drop-line-segment line-g"></div>
+                    <div class="segments description-segment">
+                        <p>WHat method is being used to select all elements matching the specified selector?</p>
+                    </div>
+                </div>
+                <div class="line-row">
+                    <div class="segments drag-line-segment">
+                        <code class="code h-a" draggable="true" ondragstart="dragStartSegmentH(event)" ondragend="dragEndSegmentH(event)">
+                            1. Raw Gradient Blitz
+                        </code>
+                        <code class="code h-b" draggable="true" ondragstart="dragStartSegmentH(event)" ondragend="dragEndSegmentH(event)">
+                            2. Royal Gallery from Browser
+                        </code>
+                        <code class="code h-c" draggable="true" ondragstart="dragStartSegmentH(event)" ondragend="dragEndSegmentH(event)">
+                            3. Red Green Blue
+                        </code>
+                    </div>
+                    <div class="segments drop-line-segment line-h"></div>
+                    <div class="segments description-segment">
+                        <p>What does RGB mean?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hex">
+            <div class="description-section-c">
+                <h3>Color Picker</h3>
+            </div>
+            <div class="color-picker-grid">
+                <div class="color-square">
+                    <div class="colors">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="color-blank-spot">
+                        <p></p>
+                    </div>
+                    <div class="color-hex-code">
+                        <p>#xxxxxx</p>
+                    </div>
+                </div>
+                <div class="color-square">
+                    <div class="colors">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="color-blank-spot">
+                        <p></p>
+                    </div>
+                    <div class="color-hex-code">
+                        <p>#xxxxxx</p>
+                    </div>
+                </div>
+                <div class="color-square">
+                    <div class="colors">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="color-blank-spot">
+                        <p></p>
+                    </div>
+                    <div class="color-hex-code">
+                        <p>#xxxxxx</p>
+                    </div>
+                </div>
+                <div class="color-square">
+                    <div class="colors">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="color-blank-spot">
+                        <p></p>
+                    </div>
+                    <div class="color-hex-code">
+                        <p>#xxxxxx</p>
+                    </div>
+                </div>
+                <div class="color-square">
+                    <div class="colors">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="color-blank-spot">
+                        <p></p>
+                    </div>
+                    <div class="color-hex-code">
+                        <p>#xxxxxx</p>
+                    </div>
+                </div>
+                <div class="color-square">
+                    <div class="colors">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="color-blank-spot">
+                        <p></p>
+                    </div>
+                    <div class="color-hex-code">
+                        <p>#xxxxxx</p>
+                    </div>
+                </div>
+                <div class="color-square">
+                    <div class="colors">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="color-blank-spot">
+                        <p></p>
+                    </div>
+                    <div class="color-hex-code">
+                        <p>#xxxxxx</p>
+                    </div>
+                </div>
+                <div class="color-square">
+                    <div class="colors">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="color-blank-spot">
+                        <p></p>
+                    </div>
+                    <div class="color-hex-code">
+                        <p>#xxxxxx</p>
+                    </div>
+                </div>
+                <div class="color-square">
+                    <div class="colors">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="color-blank-spot">
+                        <p></p>
+                    </div>
+                    <div class="color-hex-code">
+                        <p>#xxxxxx</p>
+                    </div>
+                </div>
+                <div class="color-square">
+                    <div class="colors">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="color-blank-spot">
+                        <p></p>
+                    </div>
+                    <div class="color-hex-code">
+                        <p>#xxxxxx</p>
+                    </div>
+                </div>
+                <div class="color-square">
+                    <div class="colors">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="color-blank-spot">
+                        <p></p>
+                    </div>
+                    <div class="color-hex-code">
+                        <p>#xxxxxx</p>
+                    </div>
+                </div>
+                <div class="color-square">
+                    <div class="colors">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="color-blank-spot">
+                        <p></p>
+                    </div>
+                    <div class="color-hex-code">
+                        <p>#xxxxxx</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

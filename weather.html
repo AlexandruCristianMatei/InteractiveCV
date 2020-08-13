@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/weather.css">
+    <script src="assets/js/weather.js" defer></script>
+    <script src="assets/js/clock.js" defer></script>
+</head>
+
+<body>
+    <img id="galaxy" src="Images/galaxy.jpg" alt="clear-sky">
+    <h1 class="first-h1">Here is a quick and simple search of the weather all around the world</h1>
+    <section>
+        <div class="search">
+            <h3>Enter the city name to see the results.</h3>
+            <h3>Note: The City name must be spelled corectly!</h3>
+            <div class="input">
+                <input type="text" class="inputValue" placeholder="Enter a city" />
+                <input type="submit" value="submit" class="button" />
+            </div>
+            <div class="display">
+                <h1 class="name"></h1>
+                <p class="desc"></p>
+                <div class="result">
+                    <p class="temp"></p>
+                    <span><sup>o</sup>C</span>
+                </div>
+            </div>
+        </div>
+        <div class="clock">
+            <img src="images/clock.png" alt="analogClock">
+            <div class="hour">
+                <div class="hr" id="hr"></div>
+            </div>
+            <div class="min">
+                <div class="mn" id="mn"></div>
+            </div>
+            <div class="sec">
+                <div class="sc" id="sc"></div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

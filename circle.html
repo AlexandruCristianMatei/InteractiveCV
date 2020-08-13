@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diverse</title>
+    <link rel="stylesheet" href="assets/css/circle.css">
+    <!-- <script src="main.js" defer></script> -->
+</head>
+
+<body>
+    <h1>Circle of life</h1>
+    <h2>Rules:</h2>
+    <pre>
+    Two players. One board.
+    Click on a hex to occupy it.
+    Then the other player does the same.
+    One move per player.
+    One cannot occupy a hex if it is near
+    a structure of his own other 4 hex spaces.
+    However, if a player makes a shape that
+    eliminates another, the player who lost
+    the shape loses as many points
+    as lost shapes.
+    Both player start from 22 points!
+    </pre>
+    <div class="arrow a1"></div>
+    <div class="arrow a2"></div>
+    <div class="arrow a3"></div>
+    <div class="arrow a4"></div>
+    <div class="arrow a5"></div>
+    <div class="arrow a6"></div>
+    <div class="arrow a7"></div>
+    <div class="arrow a8"></div>
+    <div class="arrow a9"></div>
+    <div class="arrow a10"></div>
+    <div class="arrow a11"></div>
+    <div class="arrow a12"></div>
+    <main>
+        <section class="grid">
+            <button class="container aa"></button>
+            <button class="container ab"></button>
+            <button class="container ac"></button>
+            <button class="container ad"></button>
+            <button class="container ae"></button>
+        </section>
+        <section class="grid2">
+            <button class="container ba"></button>
+            <button class="container bb"></button>
+            <button class="container bc"></button>
+            <button class="container bd"></button>
+            <button class="container be"></button>
+            <button class="container bf"></button>
+        </section>
+        <section class="grid3">
+            <button class="container ca"></button>
+            <button class="container cb"></button>
+            <button class="container cc"></button>
+            <button class="container cd"></button>
+            <button class="container ce"></button>
+            <button class="container cf"></button>
+            <button class="container cg"></button>
+        </section>
+        <section class="grid4">
+            <button class="container da"></button>
+            <button class="container db"></button>
+            <button class="container dc"></button>
+            <button class="container dd"></button>
+            <button class="container de"></button>
+            <button class="container df"></button>
+            <button class="container dg"></button>
+            <button class="container dh"></button>
+        </section>
+        <section class="grid5">
+            <button class="container ea"></button>
+            <button class="container eb"></button>
+            <button class="container ec"></button>
+            <button class="container ed"></button>
+            <button class="container ee"></button>
+            <button class="container ef"></button>
+            <button class="container eg"></button>
+            <button class="container eh"></button>
+            <button class="container ei"></button>
+        </section>
+        <section class="grid6">
+            <button class="container fa"></button>
+            <button class="container fb"></button>
+            <button class="container fc"></button>
+            <button class="container fd"></button>
+            <button class="container fe"></button>
+            <button class="container ff"></button>
+            <button class="container fg"></button>
+            <button class="container fh"></button>
+        </section>
+        <section class="grid7">
+            <button class="container ga"></button>
+            <button class="container gb"></button>
+            <button class="container gc"></button>
+            <button class="container gd"></button>
+            <button class="container ge"></button>
+            <button class="container gf"></button>
+            <button class="container gg"></button>
+        </section>
+        <section class="grid8">
+            <button class="container ha"></button>
+            <button class="container hb"></button>
+            <button class="container hc"></button>
+            <button class="container hd"></button>
+            <button class="container he"></button>
+            <button class="container hf"></button>
+        </section>
+        <section class="grid9">
+            <button class="container ia"></button>
+            <button class="container ib"></button>
+            <button class="container ic"></button>
+            <button class="container id"></button>
+            <button class="container ie"></button>
+        </section>
+        <section class="circle-section one">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+        </section>
+        <section class="circle-section line">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+        </section>
+        <section class="circle-section spinner">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+        </section>
+        <section class="circle-section diamond">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+        </section>
+        <section class="circle-section zig-zag">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+        </section>
+        <section class="circle-section golf">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+        </section>
+        <section class="circle-section lean">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+        </section>
+        <section class="circle-section aside">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+        </section>
+        <section class="circle-section triangle">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+        </section>
+        <section class="circle-section three">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+        </section>
+        <section class="circle-section trinity">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+        </section>
+        <section class="circle-section two">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+            <img src="images/sidehex.png" alt="aside_hexagon">
+        </section>
+    </main>
+</body>
+
+</html>
